@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <? include ("head.php");?>
-
-<body>
 
 <? include ("menu.php");?>
 
@@ -28,11 +24,7 @@
         </div>
     </div>
 
-    <? include ("rodape.php");?>
+<? include ("rodape.php");?>
 
-</div> <!-- /container -->
+<? include ("footer.php");?>
 
-<? include ("scripts.php");?>
-
-</body>
-</html>
