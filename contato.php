@@ -1,8 +1,3 @@
-
-<? include ("head.php");?>
-
-<? include ("menu.php");?>
-
 <div class="jumbotron">
     <div class="container">
         <h3>Entre em contato conosco através do formulário abaixo:</h3>
@@ -41,7 +36,9 @@
         <?}?>
 
     </div>
+    <hr>
+    <footer>
+        <p>&copy; Todos os direitos reservados - <?=date('Y')?></p>
+    </footer>
+</div> <!-- /container -->
 
-<? include ("rodape.php");?>
-
-<? include ("footer.php");?>

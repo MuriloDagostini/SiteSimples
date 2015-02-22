@@ -1,8 +1,3 @@
-
-<? include ("head.php");?>
-
-<? include ("menu.php");?>
-
 <div class="jumbotron">
     <div class="container">
         <h3>Buscando qualidade em primeiro lugar</h3>
@@ -23,8 +18,9 @@
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
     </div>
-
-<? include ("rodape.php");?>
-
-<? include ("footer.php");?>
+    <hr>
+    <footer>
+        <p>&copy; Todos os direitos reservados - <?=date('Y')?></p>
+    </footer>
+</div> <!-- /container -->
 
