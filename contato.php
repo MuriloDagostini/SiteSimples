@@ -5,18 +5,18 @@
 </div>
 <div class="container">
     <div class="row">
-        <? if($_POST['nome'] && $_POST['nome']!=""){?>
+        <? if(filter_input(INPUT_POST,'nome') && filter_input(INPUT_POST,'nome')!=""){?>
             <div class="col-md-6">
                 <h3>Mensagem enviada com sucesso!</h3>
                <p><b>abaixo seguem os dados que você enviou:</b></p>
-                <p><b>Nome:</b> <?=$_POST['nome']?></p>
-                <p><b>Email:</b> <?=$_POST['email']?></p>
-                <p><b>Assunto:</b> <?=$_POST['assunto']?></p>
-                <p><b>Mensagem:</b> <?=$_POST['mensagem']?></p>
+                <p><b>Nome:</b> <?=filter_input(INPUT_POST,'nome')?></p>
+                <p><b>Email:</b> <?=filter_input(INPUT_POST,'email',FILTER_SANITIZE_EMAIL)?></p>
+                <p><b>Assunto:</b> <?=filter_input(INPUT_POST,'assunto')?></p>
+                <p><b>Mensagem:</b> <?=filter_input(INPUT_POST,'mensagem')?></p>
             </div>
         <?}else{?>
             <div class="col-md-4">
-                <form class="form-signin" method="post" action="contato.php">
+                <form class="form-signin" method="post" action="/contato">
                     <h2 class="form-signin-heading">Formulário de contato</h2>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required autofocus>
