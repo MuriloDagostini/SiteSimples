@@ -6,19 +6,14 @@ function roteamento(){
 
     $path = ltrim($url['path'],"/");
 
-    $rotas = ['','home','empresa','produtos','servicos','contato'];
+    $rotas = ['','home','empresa','produtos','servicos','contato','busca'];
 
     if(in_array($path,$rotas)){
-        if($path==''){
-            return "home.php";
-        }else{
-            if (is_file($path.".php")) {
-                return $path . ".php";
-            }else{
-                return "404.php";
-            }
+        if($path=='') {
+            return "home";
         }
+        return $path;
     }else{
-        return "404.php";
+        return header("location: 404.php");
     }
 }

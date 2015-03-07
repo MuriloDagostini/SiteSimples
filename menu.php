@@ -17,6 +17,10 @@
                 <li><a href="servicos">Serviços</a></li>
                 <li><a href="contato">Contato</a></li>
             </ul>
+            <form action="busca.php" method="post">
+                <input type="text" name="busca" id="busca" class="search" placeholder="Buscar" />
+                <input class="searchIcon" src="img/lupa.png" type="image"></button>
+            </form>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
