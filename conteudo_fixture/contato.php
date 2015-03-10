@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
             <div class="col-md-4">
-                <form class="form-signin" method="post" action="/contato">
+                <form class="form-signin" method="post" action="/contatoPost.php">
                     <h2 class="form-signin-heading">Formulário de contato</h2>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required autofocus>
