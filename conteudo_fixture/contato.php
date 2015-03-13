@@ -8,7 +8,7 @@
             <div class="col-md-4">
                 <form class="form-signin" method="post" action="/contatoPost.php">
                     <h2 class="form-signin-heading">Formulário de contato</h2>
-                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <label for="nome" class="sr-only">Nome</label>
                     <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required autofocus>
                     <br/>
                     <label for="email" class="sr-only">Email</label>

@@ -1,7 +1,8 @@
 <?php
 
-include ("conexao.php");
-include ("rotas.php");
+include_once ("conexao.php");
+include_once ("rotas.php");
+include_once("msg.php");
 
 $url = roteamento();
 
@@ -15,13 +16,13 @@ $stmt->execute();
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 //inicio html
-include ("head.php");
+include_once ("head.php");
 
-include ("menu.php");
+include_once ("menu.php");
 
 echo $result['conteudo'];
 
-include ("footer.php");
+include_once ("footer.php");
 
 ?>
 
